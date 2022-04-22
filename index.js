@@ -9,6 +9,7 @@ const apiKey = process.env.API_KEY;
 const baseUrl = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`
 
 app.use(express.json());
+app.use(express.static("public"))
 
 app.get("/", (req, res) => {
     res.send("Welcome to Scrape Amazon API")

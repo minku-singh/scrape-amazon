@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+    <title>Scrape Amazon API</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SCRAPE AMAZON API</a>
+    </div>
+  </nav>
+    <div class="container" style="margin-top: 9vh;">
+        <div>
+          <h2>An Amazon Scraper</h2>
+          <p>Get the API data on go.</p>
+          <p>Just click the endpoints and remove {productId} with the product id and {searchQuery} with any product name of any of the products listed on Amazon.</p>
+        </div>
+
+        <table class="table table-hover" style="margin-top: 5vh;">
+            <thead>
+              <tr>
+                <th scope="col">TYPE</th>
+                <th scope="col">ENDPOINT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-active">
+                <th scope="row">GET</th>
+                <td><a href="https://scrape-amazon-minku.herokuapp.com/products/B09JQSLL92">/products/{productId}</a></td>
+              </tr>
+              <tr>
+                <th scope="row">GET</th>
+                <td><a href="https://scrape-amazon-minku.herokuapp.com/products/B09JQSLL92/reviews">/products/{productId}/reviews</a></td>
+              </tr>
+              <tr class="table-primary">
+                <th scope="row">GET</th>
+                <td><a href="https://scrape-amazon-minku.herokuapp.com/products/B09JQSLL92/offers">/products/{productId}/offers</a></td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">GET</th>
+                <td><a href="https://scrape-amazon-minku.herokuapp.com/search/macbook">/search/{searchQuery}</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <footer style="text-align: center; margin-top: 10vh;">
+            <p>Built by <a href="https://github.com/minku-singh">Minku</a></p>
+            <p>Have any suggestion? Find the project on <a href="">GitHub</a></p>
+          </footer>
+    </div>
+</body>
+
+</html>
