@@ -1,0 +1,17 @@
+{
+  "name": "amazon-scrape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Minku Singh <mailminkusingh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
